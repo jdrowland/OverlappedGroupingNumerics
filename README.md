@@ -18,7 +18,7 @@ Numerical results for "Overlapped groupings for quantum energy estimation."
 
 - `ogn/` — Core library. Pauli operators use a symplectic bitwise representation for fast commutation checks via numba. Grouping (sorted insertion, ad-hoc repacking, post-hoc repacking) and post-hoc diagonalization are numba accelerated for all systems, and variance and covariance estimation is numba accelerated for product states.
 - `plots/` — One script per figure. All plots regenerate from pre-computed data in `data/`.
-- `compute/` — Scripts to regenerate `data/` from scratch. Tensor network operations (DMRG, MPS expectation values) use quimb and kcommute. Molecular Hamiltonians are loaded from openfermion.
+- `compute/` — Scripts to regenerate `data/` from scratch. Tensor network operations (DMRG, MPS expectation values) use quimb. Molecular Hamiltonians are loaded from openfermion.
 - `data/` — Pre-computed results and OWP system data.
 
 ## Reproducing plots
