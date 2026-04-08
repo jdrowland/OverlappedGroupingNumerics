@@ -1,0 +1,12 @@
+{
+  "molecule": "H2O",
+  "method": "adhoc_repacking",
+  "state_type": "dmrg",
+  "allocation_type": "optimized",
+  "n_qubits": 14,
+  "n_electrons": 10,
+  "n_terms": 1086,
+  "num_groups": 50,
+  "total_variance": 0.00024632173514134616,
+  "dmrg_energy": -75.01299519980012
+}

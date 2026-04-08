@@ -1,0 +1,12 @@
+{
+  "molecule": "CH4",
+  "method": "sorted_insertion",
+  "state_type": "dmrg",
+  "allocation_type": "si_optimal",
+  "n_qubits": 18,
+  "n_electrons": 10,
+  "n_terms": 6892,
+  "num_groups": 168,
+  "total_variance": 0.000743505726798646,
+  "dmrg_energy": -39.78138261398117
+}

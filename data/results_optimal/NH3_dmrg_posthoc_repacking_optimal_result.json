@@ -1,0 +1,12 @@
+{
+  "molecule": "NH3",
+  "method": "posthoc_repacking",
+  "state_type": "dmrg",
+  "allocation_type": "si_optimal",
+  "n_qubits": 16,
+  "n_electrons": 10,
+  "n_terms": 3057,
+  "num_groups": 104,
+  "total_variance": 0.00041190822676379356,
+  "dmrg_energy": -55.5180220331474
+}

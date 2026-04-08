@@ -1,0 +1,12 @@
+{
+  "molecule": "LiH",
+  "method": "posthoc_repacking",
+  "state_type": "random",
+  "allocation_type": "si_optimal",
+  "n_qubits": 12,
+  "n_electrons": 4,
+  "n_terms": 631,
+  "num_groups": 43,
+  "total_variance": 3.7535386939707176e-05,
+  "dmrg_energy": null
+}

@@ -1,0 +1,12 @@
+{
+  "molecule": "CH4",
+  "method": "adhoc_repacking",
+  "state_type": "hf",
+  "allocation_type": "optimized",
+  "n_qubits": 18,
+  "n_electrons": 10,
+  "n_terms": 6892,
+  "num_groups": 168,
+  "total_variance": 0.00031087526896881885,
+  "dmrg_energy": null
+}

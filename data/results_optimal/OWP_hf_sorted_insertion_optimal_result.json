@@ -1,0 +1,10 @@
+{
+  "molecule": "OWP",
+  "method": "sorted_insertion",
+  "state_type": "hf",
+  "allocation_type": "si_optimal",
+  "n_qubits": 44,
+  "num_groups": 2737,
+  "total_variance": 0.0031496749999753906,
+  "total_shots": 100000
+}

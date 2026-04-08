@@ -1,0 +1,10 @@
+{
+  "molecule": "OWP",
+  "method": "adhoc_si_allocation",
+  "state_type": "dmrg",
+  "allocation_type": "si_optimal",
+  "n_qubits": 44,
+  "num_groups": 2737,
+  "total_variance": 0.0016658312794299865,
+  "total_shots": 100000
+}

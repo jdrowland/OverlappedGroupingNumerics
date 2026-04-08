@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+.DS_Store
+._*
+
+# Intermediate per-group results (large, recomputable)
+data/owp/results_*/
+data/owp/*_job_list.json
+data/owp/*_batch*.json
+data/owp/job_assignments.json
+data/owp/si_shots.npy
+data/owp/opt_shots.npy
+data/owp/varcov_*.json
+
+# SLURM logs and submission scripts
+logs/
+compute/submit_*.sh
+
+# Uniform allocation results (not used by plots)
+data/results_optimal/*_result.json
+!data/results_optimal/*_optimal_result.json
+data/results_optimal/OWP_optimized_shots.npz
+

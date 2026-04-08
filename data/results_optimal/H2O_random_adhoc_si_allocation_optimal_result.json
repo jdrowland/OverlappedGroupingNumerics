@@ -1,0 +1,12 @@
+{
+  "molecule": "H2O",
+  "method": "adhoc_si_allocation",
+  "state_type": "random",
+  "allocation_type": "si_optimal",
+  "n_qubits": 14,
+  "n_electrons": 10,
+  "n_terms": 1086,
+  "num_groups": 50,
+  "total_variance": 0.00212789693189466,
+  "dmrg_energy": null
+}

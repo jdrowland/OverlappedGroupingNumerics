@@ -1,0 +1,12 @@
+{
+  "molecule": "H2O",
+  "method": "sorted_insertion",
+  "state_type": "dmrg",
+  "allocation_type": "si_optimal",
+  "n_qubits": 14,
+  "n_electrons": 10,
+  "n_terms": 1086,
+  "num_groups": 50,
+  "total_variance": 0.0005435175942579858,
+  "dmrg_energy": -75.01299520985238
+}

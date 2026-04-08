@@ -1,0 +1,12 @@
+{
+  "molecule": "BeH2",
+  "method": "adhoc_si_allocation",
+  "state_type": "hf",
+  "allocation_type": "si_optimal",
+  "n_qubits": 14,
+  "n_electrons": 6,
+  "n_terms": 666,
+  "num_groups": 36,
+  "total_variance": 5.0890802600162765e-05,
+  "dmrg_energy": null
+}

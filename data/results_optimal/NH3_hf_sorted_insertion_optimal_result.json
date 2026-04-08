@@ -1,0 +1,12 @@
+{
+  "molecule": "NH3",
+  "method": "sorted_insertion",
+  "state_type": "hf",
+  "allocation_type": "si_optimal",
+  "n_qubits": 16,
+  "n_electrons": 10,
+  "n_terms": 3057,
+  "num_groups": 104,
+  "total_variance": 0.0004366092208782436,
+  "dmrg_energy": null
+}

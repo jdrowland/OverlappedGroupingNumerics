@@ -1,0 +1,12 @@
+{
+  "molecule": "BeH2",
+  "method": "posthoc_repacking",
+  "state_type": "dmrg",
+  "allocation_type": "si_optimal",
+  "n_qubits": 14,
+  "n_electrons": 6,
+  "n_terms": 666,
+  "num_groups": 36,
+  "total_variance": 5.310744295730857e-05,
+  "dmrg_energy": -15.595117465274559
+}

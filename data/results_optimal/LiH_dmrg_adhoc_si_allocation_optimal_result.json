@@ -1,0 +1,12 @@
+{
+  "molecule": "LiH",
+  "method": "adhoc_si_allocation",
+  "state_type": "dmrg",
+  "allocation_type": "si_optimal",
+  "n_qubits": 12,
+  "n_electrons": 4,
+  "n_terms": 631,
+  "num_groups": 43,
+  "total_variance": 1.9866425857665476e-05,
+  "dmrg_energy": -7.882324713611401
+}

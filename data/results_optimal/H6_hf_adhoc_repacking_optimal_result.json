@@ -1,0 +1,12 @@
+{
+  "molecule": "H6",
+  "method": "adhoc_repacking",
+  "state_type": "hf",
+  "allocation_type": "optimized",
+  "n_qubits": 12,
+  "n_electrons": 6,
+  "n_terms": 919,
+  "num_groups": 37,
+  "total_variance": 3.738647915589832e-05,
+  "dmrg_energy": null
+}

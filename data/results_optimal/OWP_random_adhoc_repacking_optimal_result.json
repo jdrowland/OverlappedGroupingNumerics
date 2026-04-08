@@ -1,0 +1,10 @@
+{
+  "molecule": "OWP",
+  "method": "adhoc_repacking",
+  "state_type": "random",
+  "allocation_type": "optimized",
+  "n_qubits": 44,
+  "num_groups": 2737,
+  "total_variance": 0.005470650668877816,
+  "total_shots": 100000
+}

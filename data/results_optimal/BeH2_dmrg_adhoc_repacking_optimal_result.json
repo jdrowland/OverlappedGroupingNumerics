@@ -1,0 +1,12 @@
+{
+  "molecule": "BeH2",
+  "method": "adhoc_repacking",
+  "state_type": "dmrg",
+  "allocation_type": "optimized",
+  "n_qubits": 14,
+  "n_electrons": 6,
+  "n_terms": 666,
+  "num_groups": 36,
+  "total_variance": 3.820351332600757e-05,
+  "dmrg_energy": -15.59511736043697
+}

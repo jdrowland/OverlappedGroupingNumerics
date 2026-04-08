@@ -1,0 +1,10 @@
+{
+  "molecule": "OWP",
+  "method": "posthoc_repacking",
+  "state_type": "hf",
+  "allocation_type": "si_optimal",
+  "n_qubits": 44,
+  "num_groups": 2737,
+  "total_variance": 0.0017204857667688258,
+  "total_shots": 100000
+}

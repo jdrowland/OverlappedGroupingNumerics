@@ -1,0 +1,12 @@
+{
+  "molecule": "H6",
+  "method": "adhoc_si_allocation",
+  "state_type": "random",
+  "allocation_type": "si_optimal",
+  "n_qubits": 12,
+  "n_electrons": 6,
+  "n_terms": 919,
+  "num_groups": 37,
+  "total_variance": 6.59978454686367e-05,
+  "dmrg_energy": null
+}

@@ -1,0 +1,12 @@
+{
+  "molecule": "LiH",
+  "method": "sorted_insertion",
+  "state_type": "hf",
+  "allocation_type": "si_optimal",
+  "n_qubits": 12,
+  "n_electrons": 4,
+  "n_terms": 631,
+  "num_groups": 43,
+  "total_variance": 2.512144578297238e-05,
+  "dmrg_energy": null
+}

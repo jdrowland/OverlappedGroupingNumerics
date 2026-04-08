@@ -1,0 +1,12 @@
+{
+  "molecule": "H2O",
+  "method": "posthoc_repacking",
+  "state_type": "random",
+  "allocation_type": "si_optimal",
+  "n_qubits": 14,
+  "n_electrons": 10,
+  "n_terms": 1086,
+  "num_groups": 50,
+  "total_variance": 0.0021753341268386977,
+  "dmrg_energy": null
+}

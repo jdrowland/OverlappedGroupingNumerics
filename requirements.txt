@@ -1,0 +1,8 @@
+numpy
+scipy
+matplotlib
+numba
+networkx
+openfermion
+cirq-core
+quimb
