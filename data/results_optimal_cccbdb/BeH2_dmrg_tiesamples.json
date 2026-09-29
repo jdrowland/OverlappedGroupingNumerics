@@ -1,0 +1,143 @@
+{
+  "molecule": "BeH2",
+  "state_type": "dmrg",
+  "n_qubits": 14,
+  "n_terms": 666,
+  "dmrg_energy": -15.595176771304931,
+  "tie_decimals": 10,
+  "tie_samples": 10,
+  "seed": 0,
+  "samples": [
+    {
+      "seed": [
+        0,
+        0
+      ],
+      "num_groups": 32,
+      "sorted_insertion": 5.324052142213894e-05,
+      "adhoc_si_allocation": 4.864870008945593e-05,
+      "adhoc_repacking": 3.8092283960384016e-05,
+      "posthoc_repacking": 4.910526932427945e-05
+    },
+    {
+      "seed": [
+        0,
+        1
+      ],
+      "num_groups": 35,
+      "sorted_insertion": 5.276935612460756e-05,
+      "adhoc_si_allocation": 4.811588249969204e-05,
+      "adhoc_repacking": 3.812669527907395e-05,
+      "posthoc_repacking": 4.906543813713959e-05
+    },
+    {
+      "seed": [
+        0,
+        2
+      ],
+      "num_groups": 33,
+      "sorted_insertion": 5.549730718701084e-05,
+      "adhoc_si_allocation": 5.0290742446551e-05,
+      "adhoc_repacking": 4.179790787418171e-05,
+      "posthoc_repacking": 5.0288700923448714e-05
+    },
+    {
+      "seed": [
+        0,
+        3
+      ],
+      "num_groups": 33,
+      "sorted_insertion": 5.48671640247225e-05,
+      "adhoc_si_allocation": 4.964772405917537e-05,
+      "adhoc_repacking": 4.290749943970071e-05,
+      "posthoc_repacking": 4.96457055282124e-05
+    },
+    {
+      "seed": [
+        0,
+        4
+      ],
+      "num_groups": 33,
+      "sorted_insertion": 5.416830143497445e-05,
+      "adhoc_si_allocation": 5.064937321656125e-05,
+      "adhoc_repacking": 3.714293994412861e-05,
+      "posthoc_repacking": 5.216675271214478e-05
+    },
+    {
+      "seed": [
+        0,
+        5
+      ],
+      "num_groups": 31,
+      "sorted_insertion": 5.2368664625125305e-05,
+      "adhoc_si_allocation": 4.4619386124560596e-05,
+      "adhoc_repacking": 3.6781175890233414e-05,
+      "posthoc_repacking": 4.461567317891523e-05
+    },
+    {
+      "seed": [
+        0,
+        6
+      ],
+      "num_groups": 32,
+      "sorted_insertion": 5.041809829926356e-05,
+      "adhoc_si_allocation": 4.6153947023858466e-05,
+      "adhoc_repacking": 3.524542306418351e-05,
+      "posthoc_repacking": 4.617887785174906e-05
+    },
+    {
+      "seed": [
+        0,
+        7
+      ],
+      "num_groups": 35,
+      "sorted_insertion": 5.300892496397175e-05,
+      "adhoc_si_allocation": 4.891475823610584e-05,
+      "adhoc_repacking": 3.6265753257744556e-05,
+      "posthoc_repacking": 4.872944767167253e-05
+    },
+    {
+      "seed": [
+        0,
+        8
+      ],
+      "num_groups": 39,
+      "sorted_insertion": 5.529596082445308e-05,
+      "adhoc_si_allocation": 4.869711016974169e-05,
+      "adhoc_repacking": 3.9493727464235345e-05,
+      "posthoc_repacking": 4.9183811272510365e-05
+    },
+    {
+      "seed": [
+        0,
+        9
+      ],
+      "num_groups": 33,
+      "sorted_insertion": 5.2644774018951844e-05,
+      "adhoc_si_allocation": 4.601282211807137e-05,
+      "adhoc_repacking": 3.698212473250771e-05,
+      "posthoc_repacking": 4.601361489084445e-05
+    }
+  ],
+  "provenance": {
+    "git_commit": "774ba8dc2323972d7be9cd0354059cc03c990871",
+    "git_dirty": true,
+    "molecule_file": "BeH2.hdf5",
+    "molecule_sha256": "981a16300931a2e282055d95280602ec797760627b19f025092c5bc2182080a2",
+    "host": "Jeremiahs-MacBook-Pro.local",
+    "python": "3.13.7",
+    "versions": {
+      "numpy": "2.4.6",
+      "openfermion": "1.7.1",
+      "pyscf": "2.13.1",
+      "openfermionpyscf": "0.5",
+      "quimb": "1.14.0",
+      "cirq": "1.6.1",
+      "numba": "0.65.1"
+    },
+    "total_shots": 100000,
+    "dmrg_chi": 64,
+    "mpo_max_bond": 100,
+    "random_state_seed": 42
+  }
+}

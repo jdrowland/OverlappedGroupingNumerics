@@ -1,7 +1,6 @@
 import numpy as np
 from numba import njit, int64
 
-from ogn.hamiltonian import Hamiltonian
 from ogn.group import GroupCollection, PauliGroup
 
 

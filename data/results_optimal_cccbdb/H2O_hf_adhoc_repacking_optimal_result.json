@@ -1,0 +1,33 @@
+{
+  "molecule": "H2O",
+  "method": "adhoc_repacking",
+  "state_type": "hf",
+  "allocation_type": "optimized",
+  "n_qubits": 14,
+  "n_electrons": 10,
+  "n_terms": 1086,
+  "num_groups": 51,
+  "total_variance": 0.00020351312979181334,
+  "dmrg_energy": null,
+  "provenance": {
+    "git_commit": "774ba8dc2323972d7be9cd0354059cc03c990871",
+    "git_dirty": true,
+    "molecule_file": "H2O.hdf5",
+    "molecule_sha256": "f13758f3a92f5a5c58ad28655798c5b9b1d2e5f780c34f2b57417160563fbba4",
+    "host": "Jeremiahs-MacBook-Pro.local",
+    "python": "3.13.7",
+    "versions": {
+      "numpy": "2.4.6",
+      "openfermion": "1.7.1",
+      "pyscf": "2.13.1",
+      "openfermionpyscf": "0.5",
+      "quimb": "1.14.0",
+      "cirq": "1.6.1",
+      "numba": "0.65.1"
+    },
+    "total_shots": 100000,
+    "dmrg_chi": 64,
+    "mpo_max_bond": 100,
+    "random_state_seed": 42
+  }
+}

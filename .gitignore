@@ -21,3 +21,6 @@ data/results_optimal/*_result.json
 !data/results_optimal/*_optimal_result.json
 data/results_optimal/OWP_optimized_shots.npz
 
+
+# Side project (H vs H^2 energy estimation), local only; canonical copy in ~/h2_experiment
+h2_prototype/

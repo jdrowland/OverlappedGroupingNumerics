@@ -6,3 +6,4 @@ networkx
 openfermion
 cirq-core
 quimb
+openfermionpyscf

@@ -1,0 +1,33 @@
+{
+  "molecule": "NH3",
+  "method": "posthoc_repacking",
+  "state_type": "dmrg",
+  "allocation_type": "si_optimal",
+  "n_qubits": 16,
+  "n_electrons": 10,
+  "n_terms": 2937,
+  "num_groups": 105,
+  "total_variance": 0.0005058280769438514,
+  "dmrg_energy": -55.52857794049427,
+  "provenance": {
+    "git_commit": "774ba8dc2323972d7be9cd0354059cc03c990871",
+    "git_dirty": true,
+    "molecule_file": "NH3.hdf5",
+    "molecule_sha256": "0d7d57991b6d51abf9b389c5704519a1fa01d399ee18e3a9bf3beb8b0c46c8ae",
+    "host": "Jeremiahs-MacBook-Pro.local",
+    "python": "3.13.7",
+    "versions": {
+      "numpy": "2.4.6",
+      "openfermion": "1.7.1",
+      "pyscf": "2.13.1",
+      "openfermionpyscf": "0.5",
+      "quimb": "1.14.0",
+      "cirq": "1.6.1",
+      "numba": "0.65.1"
+    },
+    "total_shots": 100000,
+    "dmrg_chi": 64,
+    "mpo_max_bond": 100,
+    "random_state_seed": 42
+  }
+}

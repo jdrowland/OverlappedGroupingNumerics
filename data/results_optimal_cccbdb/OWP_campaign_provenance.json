@@ -1,0 +1,48 @@
+{
+  "description": "How the OWP tie-sample DMRG covariances were computed (2026-09-29, MSU ICER). Values: product-Pauli expectations <P_i P_j> on the chi=64 OWP MPS for all in-group pairs of 10 tie-order samples x {sorted insertion, ad-hoc, post-hoc} groupings.",
+  "inputs": {
+    "hamiltonian_and_single_term_expectations": "data/owp/dmrg_expectations.npz (575,711 terms)",
+    "mps": "data/owp/owp_reactant_chi64.pkl (DMRG chi=64)",
+    "tie_samples": "compute/owp_tie_groupings.py, seeds [0, k], k=0..9, tie_decimals=10"
+  },
+  "work_list": {
+    "unique_product_paulis": 1753746936,
+    "batchA_keys": "union of samples 0-3 (775,386,568)",
+    "batchB_keys": "samples 4-9 minus batchA (978,360,368)",
+    "pool": "batchA ranges never started (749,798,812) + batchB; pool/SEGMENTS.json maps pool -> source",
+    "block_size": 5000
+  },
+  "evaluation": {
+    "worker": "compute/owp_exp_worker.py (resumable: skips existing blocks; atomic tmp+rename)",
+    "kernels": {
+      "mpo_path": "run_optimal_allocation.compute_exp_mps (cirq/quimb MPO apply); used by batchA tasks started before 2026-09-29T05:16:38-04:00",
+      "batched_sweep": "compute/pauli_sweep.batch_expectations; all later tasks"
+    },
+    "environment": "ICER thesisEnv: python 3.9, quimb 1.11.2, cirq 1.3.0, numpy 1.26.4, openfermion 1.6.1 (--no-deps)",
+    "queues": [
+      "scavenger (batchA 18030697, pool 18032977, resume/tail/gap arrays)",
+      "general-short (18034991 + resumes 18049451, 18049885)",
+      "data-machine (18036269, 18042969, resumes 18050741 + auto_cover arrays)",
+      "final tail: general 18065287 + data-machine 18065455"
+    ],
+    "resume_logs": "ICER ogn_ties/logs/REDO.log, logs/KERNEL_SWITCH.log",
+    "final_tail": "2026-09-29 13:15: remaining tail jobs cancelled; the 4,543 still-missing blocks (22,298,160 products, all pool) listed in ICER logs/final_blocks.txt and evaluated by compute/owp_block_worker.py (same batch_expectations kernel and block naming) in two arrays walking the list from opposite ends: 18065287 (general, forward) and 18065455 (data-machine, reversed); 18065984 was a duplicate submission, cancelled."
+  },
+  "validation": {
+    "batched_vs_mpo_path_local": "max|diff| <= 5.7e-15 (H2O, NH3, CH4, OWP 400 products)",
+    "batched_vs_production_mpo_values": "max|diff| 6.99e-15 on 50,000 batchA values",
+    "production_pool_values_vs_mpo_path": "max|diff| 3.66e-19 on 480 random pool values (8 blocks)",
+    "single_terms_vs_v1": "max|diff| 9.71e-17 (50 random terms vs dmrg_expectations.npz)",
+    "lookup_variance_kernels": "single/multi-table bit-identical, parallel <= 2.6e-14 vs variance_mps (H2O, CH4, LiH, NH3)",
+    "grouping_bounds": "max group 991 (< SI cap 4096); post-hoc circuits <= 1062 gates (< 2112)"
+  },
+  "completion": {
+    "assemble_log": [
+      "batchA: 775,386,568 keys, 0 missing (0.00%)",
+      "batchB: 978,360,368 keys, 0 missing (0.00%)",
+      "total missing: 0 of 1,753,746,936",
+      "complete: wrote batchA/vals_all.npy and batchB/vals_all.npy"
+    ],
+    "dmrg_tiesamples": "data/results_optimal_cccbdb/OWP_dmrg_tiesamples.json"
+  }
+}

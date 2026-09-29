@@ -1,0 +1,33 @@
+{
+  "molecule": "CH4",
+  "method": "sorted_insertion",
+  "state_type": "dmrg",
+  "allocation_type": "si_optimal",
+  "n_qubits": 18,
+  "n_electrons": 10,
+  "n_terms": 6892,
+  "num_groups": 165,
+  "total_variance": 0.0009243292411973945,
+  "dmrg_energy": -39.7725162773424,
+  "provenance": {
+    "git_commit": "774ba8dc2323972d7be9cd0354059cc03c990871",
+    "git_dirty": true,
+    "molecule_file": "CH4.hdf5",
+    "molecule_sha256": "6c58400694c3ed4cf843ad7949ee825a44fe4976958b5d42c6de2d8a1cb4f437",
+    "host": "Jeremiahs-MacBook-Pro.local",
+    "python": "3.13.7",
+    "versions": {
+      "numpy": "2.4.6",
+      "openfermion": "1.7.1",
+      "pyscf": "2.13.1",
+      "openfermionpyscf": "0.5",
+      "quimb": "1.14.0",
+      "cirq": "1.6.1",
+      "numba": "0.65.1"
+    },
+    "total_shots": 100000,
+    "dmrg_chi": 64,
+    "mpo_max_bond": 100,
+    "random_state_seed": 42
+  }
+}

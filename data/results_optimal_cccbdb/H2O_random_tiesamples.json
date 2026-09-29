@@ -1,0 +1,143 @@
+{
+  "molecule": "H2O",
+  "state_type": "random",
+  "n_qubits": 14,
+  "n_terms": 1086,
+  "dmrg_energy": null,
+  "tie_decimals": 10,
+  "tie_samples": 10,
+  "seed": 0,
+  "samples": [
+    {
+      "seed": [
+        0,
+        0
+      ],
+      "num_groups": 49,
+      "sorted_insertion": 0.0023574439659070747,
+      "adhoc_si_allocation": 0.0021645011532213025,
+      "adhoc_repacking": 0.0019894492445560936,
+      "posthoc_repacking": 0.0022011303880097384
+    },
+    {
+      "seed": [
+        0,
+        1
+      ],
+      "num_groups": 51,
+      "sorted_insertion": 0.002362051297445282,
+      "adhoc_si_allocation": 0.002163908252858064,
+      "adhoc_repacking": 0.0019703480133454404,
+      "posthoc_repacking": 0.002199333524030769
+    },
+    {
+      "seed": [
+        0,
+        2
+      ],
+      "num_groups": 52,
+      "sorted_insertion": 0.002350870773696823,
+      "adhoc_si_allocation": 0.002134166147983628,
+      "adhoc_repacking": 0.0019546116187211114,
+      "posthoc_repacking": 0.0021828422342295016
+    },
+    {
+      "seed": [
+        0,
+        3
+      ],
+      "num_groups": 48,
+      "sorted_insertion": 0.0023347946652097196,
+      "adhoc_si_allocation": 0.002134862394597776,
+      "adhoc_repacking": 0.0019555650266094185,
+      "posthoc_repacking": 0.002183033722454609
+    },
+    {
+      "seed": [
+        0,
+        4
+      ],
+      "num_groups": 49,
+      "sorted_insertion": 0.0023494699602685035,
+      "adhoc_si_allocation": 0.0021437948505582624,
+      "adhoc_repacking": 0.0019576960246549435,
+      "posthoc_repacking": 0.0021812876064962856
+    },
+    {
+      "seed": [
+        0,
+        5
+      ],
+      "num_groups": 53,
+      "sorted_insertion": 0.002348691569580105,
+      "adhoc_si_allocation": 0.002128547276189616,
+      "adhoc_repacking": 0.0019641572711420886,
+      "posthoc_repacking": 0.002181690379636214
+    },
+    {
+      "seed": [
+        0,
+        6
+      ],
+      "num_groups": 52,
+      "sorted_insertion": 0.002351404989867158,
+      "adhoc_si_allocation": 0.0021655731557421965,
+      "adhoc_repacking": 0.001985301216851858,
+      "posthoc_repacking": 0.0022026851394617137
+    },
+    {
+      "seed": [
+        0,
+        7
+      ],
+      "num_groups": 52,
+      "sorted_insertion": 0.0023559878937885652,
+      "adhoc_si_allocation": 0.002154765395160083,
+      "adhoc_repacking": 0.001968028375802952,
+      "posthoc_repacking": 0.0021943364587739453
+    },
+    {
+      "seed": [
+        0,
+        8
+      ],
+      "num_groups": 53,
+      "sorted_insertion": 0.002343010458114767,
+      "adhoc_si_allocation": 0.002153703131887761,
+      "adhoc_repacking": 0.001960191508562481,
+      "posthoc_repacking": 0.0021914046827787056
+    },
+    {
+      "seed": [
+        0,
+        9
+      ],
+      "num_groups": 52,
+      "sorted_insertion": 0.0023621000343209088,
+      "adhoc_si_allocation": 0.002158149589168237,
+      "adhoc_repacking": 0.001981314971451969,
+      "posthoc_repacking": 0.0021973865342306193
+    }
+  ],
+  "provenance": {
+    "git_commit": "774ba8dc2323972d7be9cd0354059cc03c990871",
+    "git_dirty": true,
+    "molecule_file": "H2O.hdf5",
+    "molecule_sha256": "f13758f3a92f5a5c58ad28655798c5b9b1d2e5f780c34f2b57417160563fbba4",
+    "host": "Jeremiahs-MacBook-Pro.local",
+    "python": "3.13.7",
+    "versions": {
+      "numpy": "2.4.6",
+      "openfermion": "1.7.1",
+      "pyscf": "2.13.1",
+      "openfermionpyscf": "0.5",
+      "quimb": "1.14.0",
+      "cirq": "1.6.1",
+      "numba": "0.65.1"
+    },
+    "total_shots": 100000,
+    "dmrg_chi": 64,
+    "mpo_max_bond": 100,
+    "random_state_seed": 42
+  }
+}

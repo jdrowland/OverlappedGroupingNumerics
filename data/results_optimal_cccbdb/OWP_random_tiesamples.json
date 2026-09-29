@@ -1,0 +1,138 @@
+{
+  "molecule": "OWP",
+  "state_type": "random",
+  "n_qubits": 44,
+  "n_terms": 575711,
+  "dmrg_energy": null,
+  "tie_decimals": 10,
+  "tie_samples": 10,
+  "seed": 0,
+  "samples": [
+    {
+      "seed": [
+        0,
+        0
+      ],
+      "num_groups": 4076,
+      "sorted_insertion": 0.009257848697640922,
+      "adhoc_si_allocation": 0.006206159565601148,
+      "adhoc_repacking": 0.005812646257568508,
+      "posthoc_repacking": 0.0063037143666697555
+    },
+    {
+      "seed": [
+        0,
+        1
+      ],
+      "num_groups": 4160,
+      "sorted_insertion": 0.00945734966784346,
+      "adhoc_si_allocation": 0.0063497084833625626,
+      "adhoc_repacking": 0.0059548402241982636,
+      "posthoc_repacking": 0.006459545363436093
+    },
+    {
+      "seed": [
+        0,
+        2
+      ],
+      "num_groups": 3962,
+      "sorted_insertion": 0.009178031828813783,
+      "adhoc_si_allocation": 0.006106882321856329,
+      "adhoc_repacking": 0.0057440531792911,
+      "posthoc_repacking": 0.006205111227533314
+    },
+    {
+      "seed": [
+        0,
+        3
+      ],
+      "num_groups": 4133,
+      "sorted_insertion": 0.009252153766902079,
+      "adhoc_si_allocation": 0.00618239969768135,
+      "adhoc_repacking": 0.00581187970568125,
+      "posthoc_repacking": 0.00629535784566338
+    },
+    {
+      "seed": [
+        0,
+        4
+      ],
+      "num_groups": 4124,
+      "sorted_insertion": 0.009227568920186805,
+      "adhoc_si_allocation": 0.006193858563981658,
+      "adhoc_repacking": 0.005817963914005287,
+      "posthoc_repacking": 0.006298866955651848
+    },
+    {
+      "seed": [
+        0,
+        5
+      ],
+      "num_groups": 4114,
+      "sorted_insertion": 0.00928895881006824,
+      "adhoc_si_allocation": 0.006188298505587785,
+      "adhoc_repacking": 0.005796017837211625,
+      "posthoc_repacking": 0.006304669161004327
+    },
+    {
+      "seed": [
+        0,
+        6
+      ],
+      "num_groups": 4012,
+      "sorted_insertion": 0.009288514270102388,
+      "adhoc_si_allocation": 0.006229719008805657,
+      "adhoc_repacking": 0.005825555225371265,
+      "posthoc_repacking": 0.0063358581781935135
+    },
+    {
+      "seed": [
+        0,
+        7
+      ],
+      "num_groups": 4047,
+      "sorted_insertion": 0.009348032322785617,
+      "adhoc_si_allocation": 0.00628301166195316,
+      "adhoc_repacking": 0.005886240025012951,
+      "posthoc_repacking": 0.006389796842571254
+    },
+    {
+      "seed": [
+        0,
+        8
+      ],
+      "num_groups": 4037,
+      "sorted_insertion": 0.009279398830794653,
+      "adhoc_si_allocation": 0.006209402640880783,
+      "adhoc_repacking": 0.0058208734699710905,
+      "posthoc_repacking": 0.006311842930478642
+    },
+    {
+      "seed": [
+        0,
+        9
+      ],
+      "num_groups": 4070,
+      "sorted_insertion": 0.009168405890378338,
+      "adhoc_si_allocation": 0.006096509661835808,
+      "adhoc_repacking": 0.005727683080953252,
+      "posthoc_repacking": 0.006198181000617444
+    }
+  ],
+  "provenance": {
+    "host": "agg-063",
+    "python": "3.9.23",
+    "versions": {
+      "numpy": "1.26.4",
+      "numba": "0.60.0",
+      "scipy": "1.13.1"
+    },
+    "hamiltonian": "data/owp/dmrg_expectations.npz",
+    "mps": "data/owp/owp_reactant_chi64.pkl (DMRG chi=64)",
+    "groupings": "compute/owp_tie_groupings.py, seed [0, k]",
+    "n_electrons_hf": 32,
+    "random_state_seed": 42,
+    "total_shots": 100000,
+    "note": "shot_count_optimized reaches scipy maxiter=500 at OWP scale without converging; effect on the v1-grouping variance <= 3.4e-5 relative"
+  }
+}

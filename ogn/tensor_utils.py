@@ -1,6 +1,6 @@
 import numpy as np
 import cirq
-from quimb.tensor.tensor_1d import MatrixProductOperator, MatrixProductState
+from quimb.tensor.tensor_1d import MatrixProductOperator
 from quimb.tensor.tensor_1d_compress import tensor_network_1d_compress_direct
 
 

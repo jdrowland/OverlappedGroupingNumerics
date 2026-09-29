@@ -1,0 +1,270 @@
+{
+  "LiH": {
+    "file": "LiH.hdf5",
+    "sha256": "11b6875bfcdad5e2b288031d908a5aac231625d663ea21b33ee3094fe32ed565",
+    "geometry_angstrom": [
+      [
+        "Li",
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          1.595
+        ]
+      ]
+    ],
+    "source": "CCCBDB casno=7580678, r_e 7Li1H (NIST Diatomic Spectral Database)",
+    "basis": "sto-3g",
+    "multiplicity": 1,
+    "charge": 0,
+    "hf_energy": -7.862023860127112,
+    "fci_energy": -7.882401932290217,
+    "n_qubits": 12,
+    "n_electrons": 4
+  },
+  "BeH2": {
+    "file": "BeH2.hdf5",
+    "sha256": "981a16300931a2e282055d95280602ec797760627b19f025092c5bc2182080a2",
+    "geometry_angstrom": [
+      [
+        "Be",
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          1.3264
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          -1.3264
+        ]
+      ]
+    ],
+    "source": "CCCBDB casno=7787522; Shayesteh, Tereszchuk, Bernath, Colin, J. Chem. Phys. 118, 3622 (2003)",
+    "basis": "sto-3g",
+    "multiplicity": 1,
+    "charge": 0,
+    "hf_energy": -15.560312342811814,
+    "fci_energy": -15.59517686892306,
+    "n_qubits": 14,
+    "n_electrons": 6
+  },
+  "H2O": {
+    "file": "H2O.hdf5",
+    "sha256": "f13758f3a92f5a5c58ad28655798c5b9b1d2e5f780c34f2b57417160563fbba4",
+    "geometry_angstrom": [
+      [
+        "O",
+        [
+          0.0,
+          0.0,
+          0.1173
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.7572,
+          -0.4692
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          -0.7572,
+          -0.4692
+        ]
+      ]
+    ],
+    "source": "CCCBDB casno=7732185; Hoy and Bunker (1979)",
+    "basis": "sto-3g",
+    "multiplicity": 1,
+    "charge": 0,
+    "hf_energy": -74.96302313846114,
+    "fci_energy": -75.01257824109081,
+    "n_qubits": 14,
+    "n_electrons": 10
+  },
+  "NH3": {
+    "file": "NH3.hdf5",
+    "sha256": "0d7d57991b6d51abf9b389c5704519a1fa01d399ee18e3a9bf3beb8b0c46c8ae",
+    "geometry_angstrom": [
+      [
+        "N",
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          -0.9377,
+          -0.3816
+        ]
+      ],
+      [
+        "H",
+        [
+          0.8121,
+          0.4689,
+          -0.3816
+        ]
+      ],
+      [
+        "H",
+        [
+          -0.8121,
+          0.4689,
+          -0.3816
+        ]
+      ]
+    ],
+    "source": "CCCBDB casno=7664417; Herzberg (1966)",
+    "basis": "sto-3g",
+    "multiplicity": 1,
+    "charge": 0,
+    "hf_energy": -55.45408713484903,
+    "fci_energy": -55.519219000877214,
+    "n_qubits": 16,
+    "n_electrons": 10
+  },
+  "CH4": {
+    "file": "CH4.hdf5",
+    "sha256": "6c58400694c3ed4cf843ad7949ee825a44fe4976958b5d42c6de2d8a1cb4f437",
+    "geometry_angstrom": [
+      [
+        "C",
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        "H",
+        [
+          0.6276,
+          0.6276,
+          0.6276
+        ]
+      ],
+      [
+        "H",
+        [
+          0.6276,
+          -0.6276,
+          -0.6276
+        ]
+      ],
+      [
+        "H",
+        [
+          -0.6276,
+          0.6276,
+          -0.6276
+        ]
+      ],
+      [
+        "H",
+        [
+          -0.6276,
+          -0.6276,
+          0.6276
+        ]
+      ]
+    ],
+    "source": "CCCBDB casno=74828; Hirota (1979)",
+    "basis": "sto-3g",
+    "multiplicity": 1,
+    "charge": 0,
+    "hf_energy": -39.72680917154478,
+    "fci_energy": -39.80568529406164,
+    "n_qubits": 18,
+    "n_electrons": 10
+  },
+  "H6": {
+    "file": "H6.hdf5",
+    "sha256": "2a39d0e4a0c585b45c345e1b9796e8d6b46fc9311f989c51d1e9c811aba5edab",
+    "geometry_angstrom": [
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          2.0
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          3.0
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          4.0
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          5.0
+        ]
+      ]
+    ],
+    "source": "Linear chain, 1.0 Angstrom spacing",
+    "basis": "sto-3g",
+    "multiplicity": 1,
+    "charge": 0,
+    "hf_energy": -3.1355322139663224,
+    "fci_energy": -3.2360662798923476,
+    "n_qubits": 12,
+    "n_electrons": 6
+  }
+}
