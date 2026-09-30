@@ -1,9 +1,12 @@
-numpy
-scipy
-matplotlib
-numba
-networkx
-openfermion
-cirq-core
-quimb
-openfermionpyscf
+# Tested versions (Python 3.13): the molecular results were produced, and the random-Hamiltonian and Hubbard results reproduced, with these. The OWP DMRG campaign environment is recorded in data/results_optimal/OWP_campaign_provenance.json.
+# plots/plot_partial_order.py additionally requires a LaTeX installation (matplotlib usetex).
+numpy==2.4.6
+scipy==1.17.1
+matplotlib==3.11.0
+numba==0.65.1
+networkx==3.6.1
+openfermion==1.7.1
+cirq-core==1.6.1
+quimb==1.14.0
+openfermionpyscf==0.5
+pyscf==2.13.1

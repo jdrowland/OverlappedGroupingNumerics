@@ -9,7 +9,7 @@ mpl.rcParams['xtick.labelsize'] = 12
 mpl.rcParams['ytick.labelsize'] = 12
 mpl.rcParams['legend.fontsize'] = 11
 
-DATA_PATH = '../data/product_state_varcov_v2.npz'
+DATA_PATH = '../data/product_state_varcov.npz'
 
 def main():
     data = np.load(DATA_PATH, allow_pickle=True)

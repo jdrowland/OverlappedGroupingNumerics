@@ -1,0 +1,32 @@
+{
+  "title": "OverlappedGroupingNumerics: code and data for \"Overlapped groupings for quantum energy estimation\"",
+  "upload_type": "software",
+  "description": "Code and data to reproduce the numerical results and figures of \"Overlapped groupings for quantum energy estimation\" (J. Rowland, R. Sarkar, N. P. D. Sawaya, N. M. Tubman, R. LaRose). Includes sorted insertion and ad-hoc/post-hoc repacking, covariance-aware estimator variances, the molecular Hamiltonians with their geometries, and the precomputed data behind every figure.",
+  "creators": [
+    {
+      "name": "Rowland, Jeremiah",
+      "affiliation": "Department of Physics and Astronomy, Michigan State University"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "quantum computing",
+    "energy estimation",
+    "measurement",
+    "Pauli grouping",
+    "overlapped grouping",
+    "variance reduction"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.48550/arXiv.2604.07156",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.48550/arXiv.2601.19059",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ]
+}

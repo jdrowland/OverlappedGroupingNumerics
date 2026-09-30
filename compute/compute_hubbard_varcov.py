@@ -15,7 +15,7 @@ TUNNELING = 1.0
 COULOMB = -1.0
 MAX_STATES = 10_000
 SEED = 42
-OUTPUT_PATH = Path(__file__).parent.parent / 'data' / 'product_state_varcov_v2.npz'
+OUTPUT_PATH = Path(__file__).parent.parent / 'data' / 'product_state_varcov.npz'
 
 
 def hubbard_terms(ny):
