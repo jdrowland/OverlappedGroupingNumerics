@@ -12,6 +12,17 @@ Numerical results for "Overlapped groupings for quantum energy estimation."
 
 ![Partial order on clique coverings](output/partial_order.png)
 
+## Paper figures
+
+| Figure | Plot script | Data read | Data produced by |
+|---|---|---|---|
+| Fig. 1, maximal variance reduction (schematic) | `plot_partial_order.py` (needs LaTeX) | none | — |
+| Fig. 2, molecular Hamiltonians | `plot_combined_allocation.py` | `data/results_optimal/*_tiesamples.json` | `compute/run_optimal_allocation.py`; OWP: `compute/owp_*.py` |
+| Fig. 3, random Hamiltonians | `plot_random_ham_scaling.py` | `data/results_scaling/*.json` | `compute/compute_scaling.py` |
+| Fig. 4, Fermi-Hubbard variance vs covariance | `plot_hubbard_violin.py` | `data/product_state_varcov_v2.npz` | `compute/compute_hubbard_varcov.py` |
+
+Plot scripts are in `plots/` and are run from that directory. Every figure regenerates in seconds from the files in `data/`; nothing needs to be recomputed. The results of the expensive calculations are already archived there: the per-ordering OWP variances (`data/results_optimal/OWP_*_tiesamples.json`), whose DMRG covariances took about $1.75\times10^9$ product-Pauli expectation values on a χ=64 MPS and several thousand core-hours on a cluster (provenance in `data/results_optimal/OWP_campaign_provenance.json`); and the molecular DMRG states (`data/results_optimal/*_dmrg_chi64_mps.pkl`).
+
 ## Structure
 
 - `ogn/` — Core library. Pauli operators use a symplectic bitwise representation for fast commutation checks via numba. Grouping (sorted insertion, ad-hoc repacking, post-hoc repacking) and post-hoc diagonalization are numba accelerated for all systems, and variance and covariance estimation is numba accelerated for product states.
