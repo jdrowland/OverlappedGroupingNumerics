@@ -16,7 +16,7 @@ N_SAMPLES = 10
 def main():
     p = argparse.ArgumentParser()
     p.add_argument('tie_product_dir')   # owp_tie_product.py and owp_dmrg_variances.py outputs
-    p.add_argument('dest_dir')          # data/results_optimal_cccbdb
+    p.add_argument('dest_dir')          # data/results_optimal
     args = p.parse_args()
     src, dest = Path(args.tie_product_dir), Path(args.dest_dir)
     ks = sorted(int(m.group(1)) for f in glob.glob(str(src / 'OWP_sample*.json'))

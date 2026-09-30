@@ -12,7 +12,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from ogn.pauli import PauliString
 from ogn.group import PauliGroup, GroupCollection
-from owp_product_state import variance, product_state, v1_arrays
+from owp_product_state import variance, product_state
 
 N_QUBITS = 44
 TOTAL_SHOTS = 100_000
@@ -40,31 +40,21 @@ def optimized_allocation(arrs, warm):
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument('mode', choices=['v1check', 'sample'])
-    p.add_argument('path')        # v1 owp data dir, or a groupings_seed*_sample*.pkl
+    p.add_argument('path')        # groupings_seed*_sample*.pkl from owp_tie_groupings.py
     p.add_argument('out')
     args = p.parse_args()
     t0 = time.time()
-    if args.mode == 'v1check':
-        d = Path(args.path)
-        base, adhoc = v1_arrays(d / 'groups_baseline.pkl'), v1_arrays(d / 'groups_repacked.pkl')
-        si, opt = si_allocation(base), optimized_allocation(adhoc, si_allocation(base))
-        ref_si, ref_opt = np.load(d / 'si_shots.npy'), np.load(d / 'opt_shots.npy')
-        res = {'si_shots_max_rel_diff': float(np.max(np.abs(si / ref_si - 1))),
-               'opt_shots_max_rel_diff': float(np.max(np.abs(opt / ref_opt - 1))),
-               'opt_shots_max_abs_diff': float(np.max(np.abs(opt - ref_opt)))}
-    else:
-        g = pickle.load(open(args.path, 'rb'))
-        G = g['groupings']
-        si = si_allocation(G['sorted_insertion'])
-        opt = optimized_allocation(G['adhoc'], si)
-        np.savez(Path(args.out).with_suffix('.shots.npz'), si_shots=si, opt_shots=opt)
-        cases = {'sorted_insertion': (G['sorted_insertion'], si), 'adhoc_si_allocation': (G['adhoc'], si),
-                 'adhoc_repacking': (G['adhoc'], opt), 'posthoc_repacking': (G['posthoc'], si)}
-        res = {'seed': g['seed'], 'num_groups': int(len(G['sorted_insertion']['sizes']))}
-        for st in ('hf', 'random'):
-            state = product_state(st)
-            res[st] = {m: float(variance(a, s, state)) for m, (a, s) in cases.items()}
+    g = pickle.load(open(args.path, 'rb'))
+    G = g['groupings']
+    si = si_allocation(G['sorted_insertion'])
+    opt = optimized_allocation(G['adhoc'], si)
+    np.savez(Path(args.out).with_suffix('.shots.npz'), si_shots=si, opt_shots=opt)
+    cases = {'sorted_insertion': (G['sorted_insertion'], si), 'adhoc_si_allocation': (G['adhoc'], si),
+             'adhoc_repacking': (G['adhoc'], opt), 'posthoc_repacking': (G['posthoc'], si)}
+    res = {'seed': g['seed'], 'num_groups': int(len(G['sorted_insertion']['sizes']))}
+    for st in ('hf', 'random'):
+        state = product_state(st)
+        res[st] = {m: float(variance(a, s, state)) for m, (a, s) in cases.items()}
     res['seconds'] = round(time.time() - t0, 1)
     Path(args.out).write_text(json.dumps(res, indent=2))
     print(json.dumps(res), flush=True)

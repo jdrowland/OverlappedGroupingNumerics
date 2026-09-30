@@ -46,26 +46,15 @@ def variance(arrs, shots, state):
                                             starts, sizes, shots, eX, eY, eZ, len(sizes), N_QUBITS)
 
 
-def v1_arrays(pkl):
-    d = pickle.load(open(pkl, 'rb'))
-    sizes = np.array([len(v) for v in d['x_bits']], np.int64)
-    return {'sizes': sizes, 'x': np.concatenate(d['x_bits']).astype(np.int64),
-            'z': np.concatenate(d['z_bits']).astype(np.int64),
-            'c': np.real(np.concatenate(d['coefficients'])).astype(np.float64)}
-
-
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument('grouping')          # v1 .pkl (load_symplectic format) or new groupings_*.pkl + ':key'
+    p.add_argument('grouping')          # groupings_*.pkl:<sorted_insertion|adhoc|posthoc>
     p.add_argument('shots_npy')
     p.add_argument('state', choices=['hf', 'random'])
     args = p.parse_args()
     t = time.time()
-    if ':' in args.grouping:
-        path, key = args.grouping.split(':')
-        arrs = pickle.load(open(path, 'rb'))['groupings'][key]
-    else:
-        arrs = v1_arrays(args.grouping)
+    path, key = args.grouping.split(':')
+    arrs = pickle.load(open(path, 'rb'))['groupings'][key]
     v = variance(arrs, np.load(args.shots_npy), product_state(args.state))
     print(json.dumps({'grouping': args.grouping, 'shots': args.shots_npy, 'state': args.state,
                       'total_variance': float(v), 'seconds': round(time.time() - t, 1)}), flush=True)

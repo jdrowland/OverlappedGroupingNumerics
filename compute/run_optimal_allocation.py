@@ -27,7 +27,7 @@ TOTAL_SHOTS = 100_000
 DMRG_CHI = 64
 RANDOM_SEED = 42
 MPO_MAX_BOND = 100
-OUTPUT_DIR = Path(__file__).parent.parent / 'data' / 'results_optimal_cccbdb'
+OUTPUT_DIR = Path(__file__).parent.parent / 'data' / 'results_optimal'
 
 
 def resolve_molecule_path(name):
