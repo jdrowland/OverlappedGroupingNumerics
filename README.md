@@ -1,5 +1,7 @@
 # OverlappedGroupingNumerics
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23051005.svg)](https://doi.org/10.5281/zenodo.23051005)
+
 Numerical results for "Overlapped groupings for quantum energy estimation."
 
 ## Figures
